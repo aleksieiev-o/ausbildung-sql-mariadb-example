@@ -5,16 +5,15 @@ services:
   database:
     container_name: database_container
     image: mariadb:13.0.1-rc
-    environment:
-      MARIADB_USER: '${MARIADB_USER}'
-      MARIADB_PASSWORD: '${MARIADB_PASSWORD}'
-      MARIADB_DATABASE: '${MARIADB_DATABASE}'
-      MARIADB_ROOT_PASSWORD: '${MARIADB_ROOT_PASSWORD}'
+    env_file:
+      - path: .env
+        required: true
     ports:
       - 3307:3306
     expose:
       - 3306
     volumes:
+      - ./init:/docker-entrypoint-initdb.d/
       - ./volumes/database:/var/lib/mysql:rw
     restart: always
     healthcheck:
