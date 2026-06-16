@@ -37,7 +37,7 @@ Die Initialisierung ist in drei nummerierte Dateien aufgeteilt, die MariaDB alph
 
 | Datei | Inhalt |
 |---|---|
-| `01_schema.sql` | Datenbank, Tabellen (`categories`, `tickets`, `comments`) |
+| `01_schema.sql` | Datenbank, Tabellen |
 | `02_users.sql` | DB-Benutzer anlegen + Rechte vergeben |
 | `03_seed.sql` | Beispieldaten für Entwicklung und Tests |
 
