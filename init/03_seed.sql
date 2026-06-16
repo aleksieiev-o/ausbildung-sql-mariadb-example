@@ -71,7 +71,7 @@ INSERT INTO comments (body, author, ticket_id) VALUES
 	('I agree with your points.', 'Charlie Wilson', 3),
   ('I think the new feature is a great idea.', 'David Garcia', 2),
 	('I agree with your suggestions.', 'Emily Davis', 10),
-  ('I think the new design is not perfect.', 'Frank Smith', 4),
+  ('I think the new design is not perfect.', 'Frank Smith', 4)
 ;
 
 -- Link table
