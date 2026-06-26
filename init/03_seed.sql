@@ -6,25 +6,39 @@ INSERT INTO categories (name) VALUES
 	('Security'),
 	('Design'),
 	('Documentation'),
-	('Support')
+	('Support'),
+	('Performance'),
+	('Infrastructure'),
+	('Database'),
+	('API'),
+	('Mobile'),
+	('Testing'),
+	('Deployment'),
+	('Authentication'),
+	('Accessibility'),
+	('Reporting'),
+	('Integration'),
+	('Configuration'),
+	('Monitoring'),
+	('Enhancement')
 ;
 
 INSERT INTO tickets (title, description, author, category_id) VALUES
-	('Login issue', 'User cannot log in with correct credentials.', 'Alice Johnson', 1),
-	('Page not loading', 'Dashboard page takes too long to load.', 'Bob Brown', 2),
-	('Error 500 on submit', 'Submitting the form triggers a server error.', 'Charlie Wilson', 2),
-	('Feature request: dark mode', 'Add dark mode to improve usability at night.', 'Diana', 3),
+	('Login issue', 'User cannot log in with correct credentials.', 'Alice Johnson', 14),
+	('Page not loading', 'Dashboard page takes too long to load.', 'Bob Brown', 1),
+	('Error 500 on submit', 'Submitting the form triggers a server error.', 'Charlie Wilson', 10),
+	('Feature request: dark mode', 'Add dark mode to improve usability at night.', 'Diana', 2),
 	('Typo on homepage', 'There is a spelling error in the header section.', 'Ethan', 1),
-	('Password reset email not sent', 'Users do not receive reset emails.', 'Fiona', 2),
+	('Password reset email not sent', 'Users do not receive reset emails.', 'Fiona', 14),
 	('Mobile layout broken', 'UI elements overlap on small screens.', 'George Brown', 4),
-	('Search not working', 'Search returns no results even for valid queries.', 'Hannah', 2),
-	('Profile update issue', 'Changes in profile are not saved.', 'Ivan', 2),
-	('Slow API response', 'API takes more than 5 seconds to respond.', 'Julia', 5),
-	('Notification bug', 'Users receive duplicate notifications.', 'Kevin', 3),
-	('File upload failed', 'Uploading large files causes an error.', 'Laura', 4),
-	('Security vulnerability', 'Potential XSS issue detected on input fields.', 'Mike', 5),
-	('Logout not working', 'Clicking logout does not end the session.', 'Nina', 1),
-	('UI misalignment', 'Buttons are not aligned properly on settings page.', 'Oliver', 4)
+	('Search not working', 'Search returns no results even for valid queries.', 'Hannah', 10),
+	('Profile update issue', 'Changes in profile are not saved.', 'Ivan', 9),
+	('Slow API response', 'API takes more than 5 seconds to respond.', 'Julia', 10),
+	('Notification bug', 'Users receive duplicate notifications.', 'Kevin', 1),
+	('File upload failed', 'Uploading large files causes an error.', 'Laura', 10),
+	('Security vulnerability', 'Potential XSS issue detected on input fields.', 'Mike', 3),
+	('Logout not working', 'Clicking logout does not end the session.', 'Nina', 14),
+	('UI misalignment', 'Buttons are not aligned properly on settings page.', 'Oliver', 1)
 ;
 
 INSERT INTO ticket_details (status, priority, ticket_id) VALUES
@@ -51,7 +65,31 @@ INSERT INTO tags (name) VALUES
  ('security'),
  ('design'),
  ('documentation'),
- ('feature')
+ ('feature'),
+ ('frontend'),
+ ('backend'),
+ ('database'),
+ ('api'),
+ ('mobile'),
+ ('accessibility'),
+ ('testing'),
+ ('deployment'),
+ ('authentication'),
+ ('authorization'),
+ ('ui'),
+ ('ux'),
+ ('refactoring'),
+ ('hotfix'),
+ ('regression'),
+ ('urgent'),
+ ('enhancement'),
+ ('integration'),
+ ('configuration'),
+ ('logging'),
+ ('monitoring'),
+ ('notification'),
+ ('payment'),
+ ('reporting')
 ;
 
 INSERT INTO comments (body, author, ticket_id) VALUES
