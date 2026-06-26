@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS ticket_details (
 	priority ENUM('low', 'medium', 'high') DEFAULT 'low',
 	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-	ticket_id INT,
+	ticket_id INT UNIQUE,
   FOREIGN KEY (ticket_id) REFERENCES tickets(id) ON DELETE CASCADE
 );
 
