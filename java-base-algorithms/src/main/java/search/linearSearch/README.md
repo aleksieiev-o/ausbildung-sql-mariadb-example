@@ -12,12 +12,12 @@ Er ist gut geeignet für kleine Datei-Sets, unsortierte Liste und nicht komplexe
 ## Time complexity (Zeitliche Komplexität):
 
 - Best case (Bester Fall) - **O(1)**
-- Average case (Durchschnittlicher Fall) - **O(N)**
-- Worst case (Schlimmster Fall) - **O(N)**
+- Average case (Durchschnittlicher Fall) - **O(n)**
+- Worst case (Schlimmster Fall) - **O(n)**
 
 **O(1)** - constant time complexity (Konstante Zeitkomplexität). Wenn das gesuchte Element auf der ersten Position des Arrays (Index == 0) gefunden wurde.
 
-**O(N)** - linear time complexity (Lineare Zeitkomplexität). Wenn des gesuchten Elements auf der letzten Position des Arrays (Index == arr.length - 1) oder gar nicht gefunden wurde.
+**O(n)** - linear time complexity (Lineare Zeitkomplexität). Wenn des gesuchten Elements auf der letzten Position des Arrays (Index == arr.length - 1) oder gar nicht gefunden wurde.
 
 ## Space complexity (Raumkomplexität):
 
